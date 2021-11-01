@@ -49,10 +49,7 @@ export default function Squares() {
       console.log(activeSquare);
     }
   };
-  // const style = {
-  //   border: (squares.class == activeSquare) ? "solid" : "dashed",
-  //   background: (squares.class == activeSquare) ? "green" : "white",
-  // }
+ 
   return (
     <div className='widget-squares container'>
       <h2>Squares</h2>
@@ -67,7 +64,6 @@ export default function Squares() {
               key={id}
               className={`square ${getClassName(id)}`}
               onClick={() => markActive(id)}
-              // style = {style}
             >
             </div>
           )
